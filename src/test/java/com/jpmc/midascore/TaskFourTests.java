@@ -15,13 +15,13 @@ public class TaskFourTests {
     static final Logger logger = LoggerFactory.getLogger(TaskFourTests.class);
 
     @Autowired
-    private KafkaProducer kafkaProducer;
+    public KafkaProducer kafkaProducer;
 
     @Autowired
-    private UserPopulator userPopulator;
+    public UserPopulator userPopulator;
 
     @Autowired
-    private FileLoader fileLoader;
+    public FileLoader fileLoader;
 
     @Test
     void task_four_verifier() throws InterruptedException {

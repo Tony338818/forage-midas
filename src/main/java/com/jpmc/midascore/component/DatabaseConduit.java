@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DatabaseConduit {
-    private final UserRepository userRepository;
+    public final UserRepository userRepository;
 
     public DatabaseConduit(UserRepository userRepository) {
         this.userRepository = userRepository;

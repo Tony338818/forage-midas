@@ -11,7 +11,7 @@ public class UserPopulator {
     private FileLoader fileLoader;
 
     @Autowired
-    private DatabaseConduit databaseConduit;
+    public DatabaseConduit databaseConduit;
 
     public void populate() {
         String[] userLines = fileLoader.loadStrings("/test_data/lkjhgfdsa.hjkl");
